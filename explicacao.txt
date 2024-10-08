@@ -1,0 +1,19 @@
+____________________
+
+if (...): Verifica se a condição é verdadeira.
+decisao < 1 || decisao > 4: Checa se o valor está fora do intervalo válido (1 a 4).
+isNaN(decisao): Verifica se decisao não é um número (NaN significa "Not a Number").
+alert(...): Exibe uma mensagem de alerta ao usuário se a entrada for inválida
+
+____________________
+
+let resultado;: Declara uma variável para armazenar o resultado do cálculo.
+switch (decisao) {...}: Avalia o valor de decisao e executa o bloco correspondente.
+case 1:: Se decisao for 1, realiza a adição.
+resultado = v1 + v2;: Calcula a soma e armazena em resultado.
+alert(...): Exibe o resultado.
+break;: Interrompe o switch após executar o bloco para evitar "fall-through" (Se nenhum break for encontrado, a execução continuará no próximo case, o que é conhecido como "fall-through".).
+Repetido para os casos 2 (subtração) e 4 (multiplicação).
+case 3:: Para a divisão, verifica se v2 é zero para evitar divisão por zero. Se for zero, mostra um alerta. Caso contrário, realiza a divisão e exibe o resultado
+
+____________________

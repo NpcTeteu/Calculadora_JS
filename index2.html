@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numeros</title>
+
+</head>
+<body>
+
+    <script>
+
+        //let v1 = parseFloat(prompt('Insira um valor'));
+        //let v2 = parseFloat(prompt('Insira outro valor'));
+
+        //let resultado = v1 + v2;
+
+        //alert('O resultado dessa conta é: ' + resultado);
+
+        //let v3 = parseFloat(prompt('Insira um valor'))
+
+        //if (v3 % 2 == 0) {
+            //alert('esse numero é par')
+        //}
+
+        //else {
+           // alert ('é impar')
+        //}
+
+        let decisao = parseInt(prompt('Qual operação você quer fazer: 1 - adição, 2 - subtração, 3 - divisão, 4 - multiplicação'));
+
+        if (decisao < 1 || decisao > 4 || isNaN(decisao)) {
+            alert('Operação inválida. Por favor, insira um número de 1 a 4.');
+        } else {
+            let v1 = parseFloat(prompt('Insira um valor'));
+            let v2 = parseFloat(prompt('Insira outro valor'));
+
+            let resultado;
+
+            switch (decisao) {
+
+                case 1:
+                    resultado = v1 + v2;
+                    alert('O resultado da adição é: ' + resultado);
+                    break;
+
+                case 2:
+                    resultado = v1 - v2;
+                    alert('O resultado da subtração é: ' + resultado);
+                    break;
+
+                case 3:
+                    if (v2 === 0) {
+                        alert('Erro: Divisão por zero não é permitida.');
+                    } else {
+                        resultado = v1 / v2;
+                        alert('O resultado da divisão é: ' + resultado);
+                    }
+                    break;
+
+                case 4:
+                    resultado = v1 * v2;
+                    alert('O resultado da multiplicação é: ' + resultado);
+                    break;
+                    
+            }
+        }
+    </script>
+
+</body>
+</html>
+
